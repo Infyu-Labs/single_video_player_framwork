@@ -5,81 +5,63 @@ using UnityEngine;
 public class VideoPlayerBridge : MonoBehaviour
 {
     #region P/Invoke - Call Swift Functions
-    
-    // Load Video
-    [DllImport("__Internal")]
-    private static extern void loadVideo(string url);
-
-    // Play Video
-    [DllImport("__Internal")]
-    private static extern void play();
-
-    // Pause Video
-    [DllImport("__Internal")]
-    private static extern void pause();
-
-    // Stop Video
-    [DllImport("__Internal")]
-    private static extern void stop();
-
-    // Seek Forward
-    [DllImport("__Internal")]
-    private static extern void seekForward(double seconds);
-
-    // Seek Backward
-    [DllImport("__Internal")]
-    private static extern void seekBackward(double seconds);
-
-    // Seek to specific value
-    [DllImport("__Internal")]
-    private static extern void seekTo(double value);
-
-    // Cleanup
-    [DllImport("__Internal")]
-    private static extern void cleanup();
-
-    // Set Video URLs
-    [DllImport("__Internal")]
-    private static extern void setURLS(IntPtr urlArray, int count);
-
-    // Set Visibility for Forward Button
-    [DllImport("__Internal")]
-    private static extern void setShowForwardButton(bool visible);
-
-    // Set Visibility for Backward Button
-    [DllImport("__Internal")]
-    private static extern void setShowBackwordButton(bool visible);
-
-    // Set Visibility for Back 10 Seconds Button
-    [DllImport("__Internal")]
-    private static extern void setShowBack10Button(bool visible);
-
-    // Set Visibility for Forward 10 Seconds Button
-    [DllImport("__Internal")]
-    private static extern void setShowFor10Button(bool visible);
-
-    // Set Visibility for Play/Pause Button
-    [DllImport("__Internal")]
-    private static extern void setShowPlayPauseButton(bool visible);
-
-    // Set Visibility for Back Button
-    [DllImport("__Internal")]
-    private static extern void setShowBackButton(bool visible);
-
-    // Set Visibility for Logo
-    [DllImport("__Internal")]
-    private static extern void setShowLogo(bool visible);
-
-    // Set Visibility for Seekbar
-    [DllImport("__Internal")]
-    private static extern void setShowSeekbar(bool visible);
-
-    // Set Visibility for Time Duration
-    [DllImport("__Internal")]
-    private static extern void setShowTimeDuration(bool visible);
 
     [DllImport("__Internal")]
-    private static extern void registerUnityCallback(UnityCallback callback);
+    private static extern void SL_loadVideo(string url);
+
+    [DllImport("__Internal")]
+    private static extern void SL_play();
+
+    [DllImport("__Internal")]
+    private static extern void SL_pause();
+
+    [DllImport("__Internal")]
+    private static extern void SL_stop();
+
+    [DllImport("__Internal")]
+    private static extern void SL_seekForward(double seconds);
+
+    [DllImport("__Internal")]
+    private static extern void SL_seekBackward(double seconds);
+
+    [DllImport("__Internal")]
+    private static extern void SL_seekTo(double value);
+
+    [DllImport("__Internal")]
+    private static extern void SL_cleanup();
+
+    [DllImport("__Internal")]
+    private static extern void SL_setURLS(IntPtr urlArray, int count);
+
+    [DllImport("__Internal")]
+    private static extern void SL_setShowForwardButton(bool visible);
+
+    [DllImport("__Internal")]
+    private static extern void SL_setShowBackwordButton(bool visible);
+
+    [DllImport("__Internal")]
+    private static extern void SL_setShowBack10Button(bool visible);
+
+    [DllImport("__Internal")]
+    private static extern void SL_setShowFor10Button(bool visible);
+
+    [DllImport("__Internal")]
+    private static extern void SL_setShowPlayPauseButton(bool visible);
+
+    [DllImport("__Internal")]
+    private static extern void SL_setShowBackButton(bool visible);
+
+    [DllImport("__Internal")]
+    private static extern void SL_setShowLogo(bool visible);
+
+    [DllImport("__Internal")]
+    private static extern void SL_setShowSeekbar(bool visible);
+
+    [DllImport("__Internal")]
+    private static extern void SL_setShowTimeDuration(bool visible);
+
+    [DllImport("__Internal")]
+    private static extern void SL_registerUnityCallback(UnityCallback callback);
 
     public delegate void UnityCallback(string message);
 
@@ -87,126 +69,107 @@ public class VideoPlayerBridge : MonoBehaviour
     public static void OnSwiftEvent(string message)
     {
         Debug.Log("Video Event: " + message);
-        // Parse message like "event:exit,total:300,watched:240"
     }
 
     #endregion
 
-    #region Wrapper Functions (C# Methods to Call from Unity)
+    #region Wrapper Functions
 
-    // Wrapper to load video
     public void LoadVideo(string url)
     {
-        loadVideo(url);
+        SL_loadVideo(url);
     }
 
-    // Wrapper to play video
     public void Play()
     {
-        play();
+        SL_play();
     }
 
-    // Wrapper to pause video
     public void Pause()
     {
-        pause();
+        SL_pause();
     }
 
-    // Wrapper to stop video
     public void Stop()
     {
-        stop();
+        SL_stop();
     }
 
-    // Wrapper to seek forward
     public void SeekForward(double seconds)
     {
-        seekForward(seconds);
+        SL_seekForward(seconds);
     }
 
-    // Wrapper to seek backward
     public void SeekBackward(double seconds)
     {
-        seekBackward(seconds);
+        SL_seekBackward(seconds);
     }
 
-    // Wrapper to seek to specific time
     public void SeekTo(double value)
     {
-        seekTo(value);
+        SL_seekTo(value);
     }
 
-    // Wrapper to cleanup video
     public void Cleanup()
     {
-        cleanup();
+        SL_cleanup();
     }
 
-    // Wrapper to set URLs
     public void SetURLs(string[] urls)
     {
         IntPtr urlArray = MarshalArray(urls);
-        setURLS(urlArray, urls.Length);
+        SL_setURLS(urlArray, urls.Length);
         Marshal.FreeHGlobal(urlArray);
     }
 
-    // Wrapper to show/hide forward button
     public void ShowForwardButton(bool visible)
     {
-        setShowForwardButton(visible);
+        SL_setShowForwardButton(visible);
     }
 
-    // Wrapper to show/hide backward button
     public void ShowBackwordButton(bool visible)
     {
-        setShowBackwordButton(visible);
+        SL_setShowBackwordButton(visible);
     }
 
-    // Wrapper to show/hide back 10 button
     public void ShowBack10Button(bool visible)
     {
-        setShowBack10Button(visible);
+        SL_setShowBack10Button(visible);
     }
 
-    // Wrapper to show/hide forward 10 button
     public void ShowFor10Button(bool visible)
     {
-        setShowFor10Button(visible);
+        SL_setShowFor10Button(visible);
     }
 
-    // Wrapper to show/hide play/pause button
     public void ShowPlayPauseButton(bool visible)
     {
-        setShowPlayPauseButton(visible);
+        SL_setShowPlayPauseButton(visible);
     }
 
-    // Wrapper to show/hide back button
     public void ShowBackButton(bool visible)
     {
-        setShowBackButton(visible);
+        SL_setShowBackButton(visible);
     }
 
-    // Wrapper to show/hide logo
     public void ShowLogo(bool visible)
     {
-        setShowLogo(visible);
+        SL_setShowLogo(visible);
     }
 
-    // Wrapper to show/hide seekbar
     public void ShowSeekbar(bool visible)
     {
-        setShowSeekbar(visible);
+        SL_setShowSeekbar(visible);
     }
 
-    // Wrapper to show/hide time duration
     public void ShowTimeDuration(bool visible)
     {
-        setShowTimeDuration(visible);
+        SL_setShowTimeDuration(visible);
     }
 
     #endregion
 
-    #region Helper Method - Convert C# String Array to UnsafePointer
+    #region Helper Method
 
     private IntPtr MarshalArray(string[] array)
     {

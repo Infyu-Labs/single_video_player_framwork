@@ -51,20 +51,19 @@ using UnityEngine;
 public class VideoController : MonoBehaviour
 {
     [DllImport("__Internal")]
-    private static extern void loadVideo(string url);
+    private static extern void SL_loadVideo(string url);
 
     [DllImport("__Internal")]
-    private static extern void play();
+    private static extern void SL_play();
 
     public void LoadAndPlay()
     {
-      ##if UNITY_IOS && !UNITY_EDITOR
-        loadVideo("https://example.com/video.m3u8");
-        play();
-      ##endif
+    ##if UNITY_IOS && !UNITY_EDITOR
+        SL_loadVideo("https://example.com/video.m3u8");
+        SL_play();
+    ##endif
     }
 }
-
 
 ## 🧹 Unity Integration
 
@@ -77,7 +76,7 @@ public class VideoController : MonoBehaviour
 
 ### Mandatory Initialization
 
-Before calling `Play()`, you **must** call `SetURLs()` with an array of valid video URLs. Failing to do so may cause a native crash.
+Before calling `Play()`, you **must** call `SL_setURLS()` with an array of valid video URLs. Failing to do so may cause a native crash.
 
 Example in Unity MonoBehaviour:
 
@@ -90,18 +89,25 @@ public class VideoPlayerController : MonoBehaviour
     void Start()
     {
         playerBridge = GetComponent<VideoPlayerBridge>();
-        playerBridge.SetURLs(videoURLs);
-        playerBridge.Play();
+
+#if UNITY_IOS && !UNITY_EDITOR
+        playerBridge.SL_setURLS(videoURLs);   // → calls SL_setURLS
+        playerBridge.SL_play();               // → calls SL_play
+#endif
     }
 
     void OnApplicationQuit()
     {
-        playerBridge.Cleanup();
+#if UNITY_IOS && !UNITY_EDITOR
+        playerBridge.SL_cleanup();            // → calls SL_cleanup
+#endif
     }
     
-    void OnApplicationPause ( bool pause )
+    void OnApplicationPause(bool pause)
     {
-        if ( !pause )    playerBridge.Play();
+#if UNITY_IOS && !UNITY_EDITOR
+        if (!pause) playerBridge.SL_play();   // → calls SL_play
+#endif
     }
 }
 ```
@@ -116,29 +122,29 @@ You can show or hide the built-in UI controls dynamically via the following meth
 
 | Method                 | Description                          |
 |------------------------|------------------------------------|
-| ShowForwardButton(bool) | Show or hide the forward button    |
-| ShowBackwordButton(bool) | Show or hide the backward button   |
-| ShowBack10Button(bool)  | Show or hide the back 10 seconds button |
-| ShowFor10Button(bool)   | Show or hide the forward 10 seconds button |
-| ShowPlayPauseButton(bool) | Show or hide the play/pause button |
-| ShowBackButton(bool)    | Show or hide the back button       |
-| ShowLogo(bool)          | Show or hide the logo              |
-| ShowSeekbar(bool)       | Show or hide the seek bar          |
-| ShowTimeDuration(bool)  | Show or hide the time duration display |
+| SL_setShowForwardButton(bool) | Show or hide the forward button    |
+| SL_setShowBackwordButton(bool) | Show or hide the backward button   |
+| SL_setShowBack10Button(bool)  | Show or hide the back 10 seconds button |
+| SL_setShowFor10Button(bool)   | Show or hide the forward 10 seconds button |
+| SL_setShowPlayPauseButton(bool) | Show or hide the play/pause button |
+| SL_setShowBackButton(bool)    | Show or hide the back button       |
+| SL_setShowLogo(bool)          | Show or hide the logo              |
+| SL_setShowSeekbar(bool)       | Show or hide the seek bar          |
+| SL_setShowTimeDuration(bool)  | Show or hide the time duration display |
 
 Example:
 
 ```csharp
-playerBridge.ShowPlayPauseButton(true);
-playerBridge.ShowSeekbar(false);
+playerBridge.SL_setShowPlayPauseButton(true);
+playerBridge.SL_setShowSeekbar(false);
 ```
 
 
 ## ⚠️ Usage Guidelines
 
-- Set the video URLs using `SetURLs()` **before** calling `Play()`.
-- Always call `Cleanup()` in `OnApplicationQuit()` to avoid background playback.
-- Avoid calling `Play()` without setting URLs — it may result in a native crash.
+- Set the video URLs using `SL_setURLS()` **before** calling `Play()`.
+- Always call `SL_cleanup()` in `OnApplicationQuit()` to avoid background playback.
+- Avoid calling `SL_play()` without setting URLs — it may result in a native crash.
 
 ## 📞 Example Swift Call (Optional)
 

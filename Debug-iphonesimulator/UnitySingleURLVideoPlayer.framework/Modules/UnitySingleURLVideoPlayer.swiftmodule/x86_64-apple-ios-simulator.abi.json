@@ -8682,8 +8682,8 @@
       },
       {
         "kind": "Function",
-        "name": "loadVideo",
-        "printedName": "loadVideo(urlString:)",
+        "name": "SL_loadVideo",
+        "printedName": "SL_loadVideo(urlString:)",
         "children": [
           {
             "kind": "TypeNominal",
@@ -8706,8 +8706,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)loadVideoWithUrlString:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer9loadVideo9urlStringySPys4Int8VG_tF",
+        "usr": "c:(cm)SL_loadVideoWithUrlString:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer12SL_loadVideo9urlStringySPys4Int8VG_tF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
@@ -8717,8 +8717,8 @@
       },
       {
         "kind": "Function",
-        "name": "play",
-        "printedName": "play()",
+        "name": "SL_play",
+        "printedName": "SL_play()",
         "children": [
           {
             "kind": "TypeNominal",
@@ -8727,8 +8727,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)play",
-        "mangledName": "$s25UnitySingleURLVideoPlayer4playyyF",
+        "usr": "c:(cm)SL_play",
+        "mangledName": "$s25UnitySingleURLVideoPlayer7SL_playyyF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
@@ -8738,8 +8738,8 @@
       },
       {
         "kind": "Function",
-        "name": "pause",
-        "printedName": "pause()",
+        "name": "SL_pause",
+        "printedName": "SL_pause()",
         "children": [
           {
             "kind": "TypeNominal",
@@ -8748,8 +8748,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)pause",
-        "mangledName": "$s25UnitySingleURLVideoPlayer5pauseyyF",
+        "usr": "c:(cm)SL_pause",
+        "mangledName": "$s25UnitySingleURLVideoPlayer8SL_pauseyyF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
@@ -8759,8 +8759,8 @@
       },
       {
         "kind": "Function",
-        "name": "stop",
-        "printedName": "stop()",
+        "name": "SL_stop",
+        "printedName": "SL_stop()",
         "children": [
           {
             "kind": "TypeNominal",
@@ -8769,8 +8769,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)stop",
-        "mangledName": "$s25UnitySingleURLVideoPlayer4stopyyF",
+        "usr": "c:(cm)SL_stop",
+        "mangledName": "$s25UnitySingleURLVideoPlayer7SL_stopyyF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
@@ -8780,35 +8780,8 @@
       },
       {
         "kind": "Function",
-        "name": "seekForward",
-        "printedName": "seekForward(seconds:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Double",
-            "printedName": "Swift.Double",
-            "usr": "s:Sd"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)seekForwardWithSeconds:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer11seekForward7secondsySd_tF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "seekBackward",
-        "printedName": "seekBackward(seconds:)",
+        "name": "SL_seekForward",
+        "printedName": "SL_seekForward(seconds:)",
         "children": [
           {
             "kind": "TypeNominal",
@@ -8823,8 +8796,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)seekBackwardWithSeconds:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer12seekBackward7secondsySd_tF",
+        "usr": "c:(cm)SL_seekForwardWithSeconds:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer14SL_seekForward7secondsySd_tF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
@@ -8834,8 +8807,8 @@
       },
       {
         "kind": "Function",
-        "name": "seekTo",
-        "printedName": "seekTo(value:)",
+        "name": "SL_seekBackward",
+        "printedName": "SL_seekBackward(seconds:)",
         "children": [
           {
             "kind": "TypeNominal",
@@ -8850,8 +8823,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)seekToValue:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer6seekTo5valueySd_tF",
+        "usr": "c:(cm)SL_seekBackwardWithSeconds:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer15SL_seekBackward7secondsySd_tF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
@@ -8861,8 +8834,35 @@
       },
       {
         "kind": "Function",
-        "name": "cleanup",
-        "printedName": "cleanup()",
+        "name": "SL_seekTo",
+        "printedName": "SL_seekTo(value:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Double",
+            "printedName": "Swift.Double",
+            "usr": "s:Sd"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_seekToValue:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer9SL_seekTo5valueySd_tF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_cleanup",
+        "printedName": "SL_cleanup()",
         "children": [
           {
             "kind": "TypeNominal",
@@ -8871,8 +8871,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)cleanup",
-        "mangledName": "$s25UnitySingleURLVideoPlayer7cleanupyyF",
+        "usr": "c:(cm)SL_cleanup",
+        "mangledName": "$s25UnitySingleURLVideoPlayer10SL_cleanupyyF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
@@ -8882,8 +8882,8 @@
       },
       {
         "kind": "Function",
-        "name": "setURLS",
-        "printedName": "setURLS(_:_:)",
+        "name": "SL_setURLS",
+        "printedName": "SL_setURLS(_:_:)",
         "children": [
           {
             "kind": "TypeNominal",
@@ -8928,8 +8928,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)setURLS::",
-        "mangledName": "$s25UnitySingleURLVideoPlayer7setURLSyySPySPys4Int8VGSgG_s5Int32VtF",
+        "usr": "c:(cm)SL_setURLS::",
+        "mangledName": "$s25UnitySingleURLVideoPlayer10SL_setURLSyySPySPys4Int8VGSgG_s5Int32VtF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
@@ -8939,8 +8939,8 @@
       },
       {
         "kind": "Function",
-        "name": "setShowForwardButton",
-        "printedName": "setShowForwardButton(_:)",
+        "name": "SL_setShowForwardButton",
+        "printedName": "SL_setShowForwardButton(_:)",
         "children": [
           {
             "kind": "TypeNominal",
@@ -8955,8 +8955,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)setShowForwardButton:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer20setShowForwardButtonyySbF",
+        "usr": "c:(cm)SL_setShowForwardButton:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer23SL_setShowForwardButtonyySbF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
@@ -8966,8 +8966,8 @@
       },
       {
         "kind": "Function",
-        "name": "setShowBackwordButton",
-        "printedName": "setShowBackwordButton(_:)",
+        "name": "SL_setShowBackwordButton",
+        "printedName": "SL_setShowBackwordButton(_:)",
         "children": [
           {
             "kind": "TypeNominal",
@@ -8982,8 +8982,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)setShowBackwordButton:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer21setShowBackwordButtonyySbF",
+        "usr": "c:(cm)SL_setShowBackwordButton:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer24SL_setShowBackwordButtonyySbF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
@@ -8993,8 +8993,8 @@
       },
       {
         "kind": "Function",
-        "name": "setShowBack10Button",
-        "printedName": "setShowBack10Button(_:)",
+        "name": "SL_setShowBack10Button",
+        "printedName": "SL_setShowBack10Button(_:)",
         "children": [
           {
             "kind": "TypeNominal",
@@ -9009,8 +9009,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)setShowBack10Button:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer19setShowBack10ButtonyySbF",
+        "usr": "c:(cm)SL_setShowBack10Button:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer22SL_setShowBack10ButtonyySbF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
@@ -9020,8 +9020,8 @@
       },
       {
         "kind": "Function",
-        "name": "setShowFor10Button",
-        "printedName": "setShowFor10Button(_:)",
+        "name": "SL_setShowFor10Button",
+        "printedName": "SL_setShowFor10Button(_:)",
         "children": [
           {
             "kind": "TypeNominal",
@@ -9036,8 +9036,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)setShowFor10Button:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer18setShowFor10ButtonyySbF",
+        "usr": "c:(cm)SL_setShowFor10Button:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer21SL_setShowFor10ButtonyySbF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
@@ -9047,8 +9047,8 @@
       },
       {
         "kind": "Function",
-        "name": "setShowPlayPauseButton",
-        "printedName": "setShowPlayPauseButton(_:)",
+        "name": "SL_setShowPlayPauseButton",
+        "printedName": "SL_setShowPlayPauseButton(_:)",
         "children": [
           {
             "kind": "TypeNominal",
@@ -9063,8 +9063,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)setShowPlayPauseButton:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer22setShowPlayPauseButtonyySbF",
+        "usr": "c:(cm)SL_setShowPlayPauseButton:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer25SL_setShowPlayPauseButtonyySbF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
@@ -9074,8 +9074,8 @@
       },
       {
         "kind": "Function",
-        "name": "setShowBackButton",
-        "printedName": "setShowBackButton(_:)",
+        "name": "SL_setShowBackButton",
+        "printedName": "SL_setShowBackButton(_:)",
         "children": [
           {
             "kind": "TypeNominal",
@@ -9090,8 +9090,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)setShowBackButton:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer17setShowBackButtonyySbF",
+        "usr": "c:(cm)SL_setShowBackButton:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer20SL_setShowBackButtonyySbF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
@@ -9101,8 +9101,8 @@
       },
       {
         "kind": "Function",
-        "name": "setShowLogo",
-        "printedName": "setShowLogo(_:)",
+        "name": "SL_setShowLogo",
+        "printedName": "SL_setShowLogo(_:)",
         "children": [
           {
             "kind": "TypeNominal",
@@ -9117,8 +9117,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)setShowLogo:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer11setShowLogoyySbF",
+        "usr": "c:(cm)SL_setShowLogo:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer14SL_setShowLogoyySbF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
@@ -9128,8 +9128,8 @@
       },
       {
         "kind": "Function",
-        "name": "setShowSeekbar",
-        "printedName": "setShowSeekbar(_:)",
+        "name": "SL_setShowSeekbar",
+        "printedName": "SL_setShowSeekbar(_:)",
         "children": [
           {
             "kind": "TypeNominal",
@@ -9144,8 +9144,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)setShowSeekbar:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer14setShowSeekbaryySbF",
+        "usr": "c:(cm)SL_setShowSeekbar:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer17SL_setShowSeekbaryySbF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
@@ -9155,8 +9155,8 @@
       },
       {
         "kind": "Function",
-        "name": "setShowTimeDuration",
-        "printedName": "setShowTimeDuration(_:)",
+        "name": "SL_setShowTimeDuration",
+        "printedName": "SL_setShowTimeDuration(_:)",
         "children": [
           {
             "kind": "TypeNominal",
@@ -9171,8 +9171,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)setShowTimeDuration:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer19setShowTimeDurationyySbF",
+        "usr": "c:(cm)SL_setShowTimeDuration:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer22SL_setShowTimeDurationyySbF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
@@ -9241,8 +9241,8 @@
       },
       {
         "kind": "Function",
-        "name": "registerUnityCallback",
-        "printedName": "registerUnityCallback()",
+        "name": "SL_registerUnityCallback",
+        "printedName": "SL_registerUnityCallback()",
         "children": [
           {
             "kind": "TypeNominal",
@@ -9251,13 +9251,12 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)registerUnityCallback",
-        "mangledName": "$s25UnitySingleURLVideoPlayer08registerA8CallbackyyF",
+        "usr": "c:(cm)SL_registerUnityCallback",
+        "mangledName": "$s25UnitySingleURLVideoPlayer011SL_registerA8CallbackyyF",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
           "AccessControl",
-          "CDecl",
-          "RawDocComment"
+          "CDecl"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -12486,238 +12485,238 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/Views\/VideoPlayerView.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/Views\/VideoPlayerView.swift",
       "kind": "StringLiteral",
       "offset": 7963,
       "length": 84,
       "value": "\"https:\/\/commondatastorage.googleapis.com\/gtv-videos-bucket\/sample\/BigBuckBunny.mp4\""
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/Views\/VideoPlayerView.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/Views\/VideoPlayerView.swift",
       "kind": "IntegerLiteral",
       "offset": 8056,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
       "offset": 336,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 388,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 433,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 481,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
       "offset": 534,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
       "offset": 590,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
       "offset": 644,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
       "offset": 697,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
       "offset": 754,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
       "offset": 806,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
       "offset": 852,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
       "offset": 901,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
       "offset": 954,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
       "offset": 1003,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
       "offset": 1059,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
       "offset": 1117,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
       "offset": 1168,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
       "offset": 1279,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "StringLiteral",
       "offset": 1336,
       "length": 90,
       "value": "\"https:\/\/d142uv38695ylm.cloudfront.net\/videos\/promo\/allesneu.land-promo-trailer-360p.m3u8\""
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 1435,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/UnitySingleVideoPlayer\/UnitySingleURLVideoPlayer\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
+      "filePath": "\/Users\/enpointe\/Desktop\/Video Player\/Single Video Player\/single_video_player_sdk_code\/UnitySingleURLVideoPlayer\/UnityVideoPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 1486,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-bufamhzuuqcyribzjcewlhpwcyac\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-egtsybaauprzvnccwlkunsgrcwpz\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 725,
       "length": 8,
       "value": "\"Circle\""
     },
     {
-      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-bufamhzuuqcyribzjcewlhpwcyac\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-egtsybaauprzvnccwlkunsgrcwpz\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 853,
       "length": 7,
       "value": "\"Pause\""
     },
     {
-      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-bufamhzuuqcyribzjcewlhpwcyac\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-egtsybaauprzvnccwlkunsgrcwpz\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 978,
       "length": 6,
       "value": "\"Play\""
     },
     {
-      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-bufamhzuuqcyribzjcewlhpwcyac\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-egtsybaauprzvnccwlkunsgrcwpz\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1114,
       "length": 12,
       "value": "\"backbutton\""
     },
     {
-      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-bufamhzuuqcyribzjcewlhpwcyac\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-egtsybaauprzvnccwlkunsgrcwpz\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1257,
       "length": 13,
       "value": "\"backword_10\""
     },
     {
-      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-bufamhzuuqcyribzjcewlhpwcyac\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-egtsybaauprzvnccwlkunsgrcwpz\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1399,
       "length": 12,
       "value": "\"forward_10\""
     },
     {
-      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-bufamhzuuqcyribzjcewlhpwcyac\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-egtsybaauprzvnccwlkunsgrcwpz\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1538,
       "length": 11,
       "value": "\"gray_back\""
     },
     {
-      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-bufamhzuuqcyribzjcewlhpwcyac\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-egtsybaauprzvnccwlkunsgrcwpz\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1667,
       "length": 6,
       "value": "\"prev\""
     },
     {
-      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-bufamhzuuqcyribzjcewlhpwcyac\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-egtsybaauprzvnccwlkunsgrcwpz\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1803,
       "length": 12,
       "value": "\"skidosLogo\""
     },
     {
-      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-bufamhzuuqcyribzjcewlhpwcyac\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-egtsybaauprzvnccwlkunsgrcwpz\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1937,
       "length": 8,
       "value": "\"slider\""
     },
     {
-      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-bufamhzuuqcyribzjcewlhpwcyac\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/enpointe\/Library\/Developer\/Xcode\/DerivedData\/UnitySingleURLVideoPlayer-egtsybaauprzvnccwlkunsgrcwpz\/Build\/Intermediates.noindex\/UnitySingleURLVideoPlayer.build\/Debug-iphonesimulator\/UnitySingleURLVideoPlayer.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2076,
       "length": 13,
