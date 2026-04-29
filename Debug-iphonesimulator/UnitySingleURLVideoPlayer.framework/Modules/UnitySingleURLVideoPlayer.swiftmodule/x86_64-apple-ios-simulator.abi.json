@@ -217,6 +217,201 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "HiddenViewModifier",
+        "printedName": "HiddenViewModifier",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isHidden",
+            "printedName": "isHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:25UnitySingleURLVideoPlayer18HiddenViewModifierV02isE0Sbvp",
+            "mangledName": "$s25UnitySingleURLVideoPlayer18HiddenViewModifierV02isE0Sbvp",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25UnitySingleURLVideoPlayer18HiddenViewModifierV02isE0Sbvg",
+                "mangledName": "$s25UnitySingleURLVideoPlayer18HiddenViewModifierV02isE0Sbvg",
+                "moduleName": "UnitySingleURLVideoPlayer",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "body",
+            "printedName": "body(content:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_ViewModifier_Content",
+                "printedName": "SwiftUI._ViewModifier_Content<UnitySingleURLVideoPlayer.HiddenViewModifier>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HiddenViewModifier",
+                    "printedName": "UnitySingleURLVideoPlayer.HiddenViewModifier",
+                    "usr": "s:25UnitySingleURLVideoPlayer18HiddenViewModifierV"
+                  }
+                ],
+                "usr": "s:7SwiftUI21_ViewModifier_ContentV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer18HiddenViewModifierV4body7contentQr7SwiftUI01_fG8_ContentVyACG_tF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer18HiddenViewModifierV4body7contentQr7SwiftUI01_fG8_ContentVyACG_tF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(isHidden:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HiddenViewModifier",
+                "printedName": "UnitySingleURLVideoPlayer.HiddenViewModifier",
+                "usr": "s:25UnitySingleURLVideoPlayer18HiddenViewModifierV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:25UnitySingleURLVideoPlayer18HiddenViewModifierV02isE0ACSb_tcfc",
+            "mangledName": "$s25UnitySingleURLVideoPlayer18HiddenViewModifierV02isE0ACSb_tcfc",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:25UnitySingleURLVideoPlayer18HiddenViewModifierV",
+        "mangledName": "$s25UnitySingleURLVideoPlayer18HiddenViewModifierV",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ViewModifier",
+            "printedName": "ViewModifier",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI12ViewModifierP",
+            "mangledName": "$s7SwiftUI12ViewModifierP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -1679,19 +1874,729 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
+        "kind": "Var",
+        "name": "currentVideoPlayerService",
+        "printedName": "currentVideoPlayerService",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "UnitySingleURLVideoPlayer.VideoPlayerService?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VideoPlayerService",
+                "printedName": "UnitySingleURLVideoPlayer.VideoPlayerService",
+                "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:25UnitySingleURLVideoPlayer012currentVideoD7ServiceAA0fdG0CSgvp",
+        "mangledName": "$s25UnitySingleURLVideoPlayer012currentVideoD7ServiceAA0fdG0CSgvp",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl",
           "RawDocComment"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UnitySingleURLVideoPlayer.VideoPlayerService?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoPlayerService",
+                    "printedName": "UnitySingleURLVideoPlayer.VideoPlayerService",
+                    "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:25UnitySingleURLVideoPlayer012currentVideoD7ServiceAA0fdG0CSgvg",
+            "mangledName": "$s25UnitySingleURLVideoPlayer012currentVideoD7ServiceAA0fdG0CSgvg",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UnitySingleURLVideoPlayer.VideoPlayerService?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoPlayerService",
+                    "printedName": "UnitySingleURLVideoPlayer.VideoPlayerService",
+                    "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:25UnitySingleURLVideoPlayer012currentVideoD7ServiceAA0fdG0CSgvs",
+            "mangledName": "$s25UnitySingleURLVideoPlayer012currentVideoD7ServiceAA0fdG0CSgvs",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:25UnitySingleURLVideoPlayer012currentVideoD7ServiceAA0fdG0CSgvM",
+            "mangledName": "$s25UnitySingleURLVideoPlayer012currentVideoD7ServiceAA0fdG0CSgvM",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
         ]
       },
       {
+        "kind": "Function",
+        "name": "SL_loadVideo",
+        "printedName": "SL_loadVideo(urlString:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
+              }
+            ],
+            "usr": "s:SP"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_loadVideoWithUrlString:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer12SL_loadVideo9urlStringySPys4Int8VG_tF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_play",
+        "printedName": "SL_play()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_play",
+        "mangledName": "$s25UnitySingleURLVideoPlayer7SL_playyyF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_pause",
+        "printedName": "SL_pause()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_pause",
+        "mangledName": "$s25UnitySingleURLVideoPlayer8SL_pauseyyF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_stop",
+        "printedName": "SL_stop()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_stop",
+        "mangledName": "$s25UnitySingleURLVideoPlayer7SL_stopyyF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_seekForward",
+        "printedName": "SL_seekForward(seconds:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Double",
+            "printedName": "Swift.Double",
+            "usr": "s:Sd"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_seekForwardWithSeconds:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer14SL_seekForward7secondsySd_tF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_seekBackward",
+        "printedName": "SL_seekBackward(seconds:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Double",
+            "printedName": "Swift.Double",
+            "usr": "s:Sd"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_seekBackwardWithSeconds:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer15SL_seekBackward7secondsySd_tF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_seekTo",
+        "printedName": "SL_seekTo(value:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Double",
+            "printedName": "Swift.Double",
+            "usr": "s:Sd"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_seekToValue:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer9SL_seekTo5valueySd_tF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_cleanup",
+        "printedName": "SL_cleanup()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_cleanup",
+        "mangledName": "$s25UnitySingleURLVideoPlayer10SL_cleanupyyF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_setURLS",
+        "printedName": "SL_setURLS(_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.UnsafePointer<Swift.Int8>?>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafePointer",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int8",
+                        "printedName": "Swift.Int8",
+                        "usr": "s:s4Int8V"
+                      }
+                    ],
+                    "usr": "s:SP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "usr": "s:SP"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int32",
+            "printedName": "Swift.Int32",
+            "usr": "s:s5Int32V"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_setURLS::",
+        "mangledName": "$s25UnitySingleURLVideoPlayer10SL_setURLSyySPySPys4Int8VGSgG_s5Int32VtF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_setShowForwardButton",
+        "printedName": "SL_setShowForwardButton(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_setShowForwardButton:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer23SL_setShowForwardButtonyySbF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_setShowBackwordButton",
+        "printedName": "SL_setShowBackwordButton(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_setShowBackwordButton:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer24SL_setShowBackwordButtonyySbF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_setShowBack10Button",
+        "printedName": "SL_setShowBack10Button(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_setShowBack10Button:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer22SL_setShowBack10ButtonyySbF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_setShowFor10Button",
+        "printedName": "SL_setShowFor10Button(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_setShowFor10Button:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer21SL_setShowFor10ButtonyySbF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_setShowPlayPauseButton",
+        "printedName": "SL_setShowPlayPauseButton(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_setShowPlayPauseButton:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer25SL_setShowPlayPauseButtonyySbF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_setShowBackButton",
+        "printedName": "SL_setShowBackButton(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_setShowBackButton:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer20SL_setShowBackButtonyySbF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_setShowLogo",
+        "printedName": "SL_setShowLogo(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_setShowLogo:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer14SL_setShowLogoyySbF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_setShowSeekbar",
+        "printedName": "SL_setShowSeekbar(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_setShowSeekbar:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer17SL_setShowSeekbaryySbF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_setShowTimeDuration",
+        "printedName": "SL_setShowTimeDuration(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_setShowTimeDuration:",
+        "mangledName": "$s25UnitySingleURLVideoPlayer22SL_setShowTimeDurationyySbF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "UnitySendMessage",
+        "printedName": "UnitySendMessage(_:_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
+              }
+            ],
+            "usr": "s:SP"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
+              }
+            ],
+            "usr": "s:SP"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
+              }
+            ],
+            "usr": "s:SP"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:25UnitySingleURLVideoPlayer0A11SendMessageyySPys4Int8VG_A2EtF",
+        "mangledName": "$s25UnitySingleURLVideoPlayer0A11SendMessageyySPys4Int8VG_A2EtF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "SL_registerUnityCallback",
+        "printedName": "SL_registerUnityCallback()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)SL_registerUnityCallback",
+        "mangledName": "$s25UnitySingleURLVideoPlayer011SL_registerA8CallbackyyF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "sendUnityMessage",
+        "printedName": "sendUnityMessage(methodName:message:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:25UnitySingleURLVideoPlayer04sendA7Message10methodName7messageySS_SStF",
+        "mangledName": "$s25UnitySingleURLVideoPlayer04sendA7Message10methodName7messageySS_SStF",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "funcSelfKind": "NonMutating"
+      },
+      {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "UnitySingleURLVideoPlayer",
         "declAttributes": [
@@ -1700,108 +2605,266 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "HiddenViewModifier",
-        "printedName": "HiddenViewModifier",
+        "name": "VideoPlayerService",
+        "printedName": "VideoPlayerService",
         "children": [
           {
-            "kind": "Var",
-            "name": "isHidden",
-            "printedName": "isHidden",
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "VideoPlayerService",
+                "printedName": "UnitySingleURLVideoPlayer.VideoPlayerService",
+                "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:25UnitySingleURLVideoPlayer18HiddenViewModifierV02isE0Sbvp",
-            "mangledName": "$s25UnitySingleURLVideoPlayer18HiddenViewModifierV02isE0Sbvp",
+            "declKind": "Constructor",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceCACycfc",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceCACycfc",
             "moduleName": "UnitySingleURLVideoPlayer",
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "HasStorage"
+              "AccessControl"
             ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:25UnitySingleURLVideoPlayer18HiddenViewModifierV02isE0Sbvg",
-                "mangledName": "$s25UnitySingleURLVideoPlayer18HiddenViewModifierV02isE0Sbvg",
-                "moduleName": "UnitySingleURLVideoPlayer",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
+            "init_kind": "Designated"
           },
           {
             "kind": "Function",
-            "name": "body",
-            "printedName": "body(content:)",
+            "name": "loadVideo",
+            "printedName": "loadVideo(urlString:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
-                "name": "_ViewModifier_Content",
-                "printedName": "SwiftUI._ViewModifier_Content<UnitySingleURLVideoPlayer.HiddenViewModifier>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "HiddenViewModifier",
-                    "printedName": "UnitySingleURLVideoPlayer.HiddenViewModifier",
-                    "usr": "s:25UnitySingleURLVideoPlayer18HiddenViewModifierV"
-                  }
-                ],
-                "usr": "s:7SwiftUI21_ViewModifier_ContentV"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer18HiddenViewModifierV4body7contentQr7SwiftUI01_fG8_ContentVyACG_tF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer18HiddenViewModifierV4body7contentQr7SwiftUI01_fG8_ContentVyACG_tF",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC04loadE09urlStringySS_tF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC04loadE09urlStringySS_tF",
             "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(isHidden:)",
+            "kind": "Function",
+            "name": "play",
+            "printedName": "play()",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "HiddenViewModifier",
-                "printedName": "UnitySingleURLVideoPlayer.HiddenViewModifier",
-                "usr": "s:25UnitySingleURLVideoPlayer18HiddenViewModifierV"
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC4playyyF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC4playyyF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pause",
+            "printedName": "pause()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC5pauseyyF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC5pauseyyF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC4stopyyF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC4stopyyF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "seekForward",
+            "printedName": "seekForward(seconds:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC11seekForward7secondsySd_tF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC11seekForward7secondsySd_tF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "seekBackward",
+            "printedName": "seekBackward(seconds:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC12seekBackward7secondsySd_tF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC12seekBackward7secondsySd_tF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cleanup",
+            "printedName": "cleanup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC7cleanupyyF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC7cleanupyyF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "seekTo",
+            "printedName": "seekTo(value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC6seekTo5valueySd_tF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC6seekTo5valueySd_tF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setURLS",
+            "printedName": "setURLS(urls:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC7setURLS4urlsySaySSG_tF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC7setURLS4urlsySaySSG_tF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setShowForwardButton",
+            "printedName": "setShowForwardButton(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
@@ -1810,24 +2873,240 @@
                 "usr": "s:Sb"
               }
             ],
-            "declKind": "Constructor",
-            "usr": "s:25UnitySingleURLVideoPlayer18HiddenViewModifierV02isE0ACSb_tcfc",
-            "mangledName": "$s25UnitySingleURLVideoPlayer18HiddenViewModifierV02isE0ACSb_tcfc",
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC20setShowForwardButtonyySbF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC20setShowForwardButtonyySbF",
             "moduleName": "UnitySingleURLVideoPlayer",
-            "implicit": true,
+            "isOpen": true,
             "declAttributes": [
-              "Nonisolated"
+              "AccessControl",
+              "RawDocComment"
             ],
-            "init_kind": "Designated"
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setShowBackwordButton",
+            "printedName": "setShowBackwordButton(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC21setShowBackwordButtonyySbF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC21setShowBackwordButtonyySbF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setShowBack10Button",
+            "printedName": "setShowBack10Button(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC19setShowBack10ButtonyySbF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC19setShowBack10ButtonyySbF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setShowFor10Button",
+            "printedName": "setShowFor10Button(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC18setShowFor10ButtonyySbF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC18setShowFor10ButtonyySbF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setShowPlayPauseButton",
+            "printedName": "setShowPlayPauseButton(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC22setShowPlayPauseButtonyySbF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC22setShowPlayPauseButtonyySbF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setShowBackButton",
+            "printedName": "setShowBackButton(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC17setShowBackButtonyySbF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC17setShowBackButtonyySbF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setShowLogo",
+            "printedName": "setShowLogo(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC11setShowLogoyySbF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC11setShowLogoyySbF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setShowSeekbar",
+            "printedName": "setShowSeekbar(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC14setShowSeekbaryySbF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC14setShowSeekbaryySbF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setShowTimeDuration",
+            "printedName": "setShowTimeDuration(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC19setShowTimeDurationyySbF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC19setShowTimeDurationyySbF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:25UnitySingleURLVideoPlayer18HiddenViewModifierV",
-        "mangledName": "$s25UnitySingleURLVideoPlayer18HiddenViewModifierV",
+        "declKind": "Class",
+        "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC",
+        "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC",
         "moduleName": "UnitySingleURLVideoPlayer",
+        "isOpen": true,
         "declAttributes": [
-          "Preconcurrency",
-          "Custom",
           "AccessControl"
         ],
         "conformances": [
@@ -1844,42 +3123,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ViewModifier",
-            "printedName": "ViewModifier",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI12ViewModifierP",
-            "mangledName": "$s7SwiftUI12ViewModifierP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -3225,1914 +4468,6 @@
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
           }
-        ]
-      },
-      {
-        "kind": "Var",
-        "name": "currentVideoPlayerService",
-        "printedName": "currentVideoPlayerService",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Optional",
-            "printedName": "UnitySingleURLVideoPlayer.VideoPlayerService?",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "VideoPlayerService",
-                "printedName": "UnitySingleURLVideoPlayer.VideoPlayerService",
-                "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC"
-              }
-            ],
-            "usr": "s:Sq"
-          }
-        ],
-        "declKind": "Var",
-        "usr": "s:25UnitySingleURLVideoPlayer012currentVideoD7ServiceAA0fdG0CSgvp",
-        "mangledName": "$s25UnitySingleURLVideoPlayer012currentVideoD7ServiceAA0fdG0CSgvp",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "HasInitialValue",
-          "HasStorage",
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "hasStorage": true,
-        "accessors": [
-          {
-            "kind": "Accessor",
-            "name": "Get",
-            "printedName": "Get()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UnitySingleURLVideoPlayer.VideoPlayerService?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VideoPlayerService",
-                    "printedName": "UnitySingleURLVideoPlayer.VideoPlayerService",
-                    "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Accessor",
-            "usr": "s:25UnitySingleURLVideoPlayer012currentVideoD7ServiceAA0fdG0CSgvg",
-            "mangledName": "$s25UnitySingleURLVideoPlayer012currentVideoD7ServiceAA0fdG0CSgvg",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "implicit": true,
-            "accessorKind": "get"
-          },
-          {
-            "kind": "Accessor",
-            "name": "Set",
-            "printedName": "Set()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UnitySingleURLVideoPlayer.VideoPlayerService?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VideoPlayerService",
-                    "printedName": "UnitySingleURLVideoPlayer.VideoPlayerService",
-                    "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Accessor",
-            "usr": "s:25UnitySingleURLVideoPlayer012currentVideoD7ServiceAA0fdG0CSgvs",
-            "mangledName": "$s25UnitySingleURLVideoPlayer012currentVideoD7ServiceAA0fdG0CSgvs",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "implicit": true,
-            "accessorKind": "set"
-          },
-          {
-            "kind": "Accessor",
-            "name": "Modify",
-            "printedName": "Modify()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Accessor",
-            "usr": "s:25UnitySingleURLVideoPlayer012currentVideoD7ServiceAA0fdG0CSgvM",
-            "mangledName": "$s25UnitySingleURLVideoPlayer012currentVideoD7ServiceAA0fdG0CSgvM",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "implicit": true,
-            "accessorKind": "_modify"
-          }
-        ]
-      },
-      {
-        "kind": "Function",
-        "name": "SL_loadVideo",
-        "printedName": "SL_loadVideo(urlString:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "UnsafePointer",
-            "printedName": "Swift.UnsafePointer<Swift.Int8>",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int8",
-                "printedName": "Swift.Int8",
-                "usr": "s:s4Int8V"
-              }
-            ],
-            "usr": "s:SP"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_loadVideoWithUrlString:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer12SL_loadVideo9urlStringySPys4Int8VG_tF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_play",
-        "printedName": "SL_play()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_play",
-        "mangledName": "$s25UnitySingleURLVideoPlayer7SL_playyyF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_pause",
-        "printedName": "SL_pause()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_pause",
-        "mangledName": "$s25UnitySingleURLVideoPlayer8SL_pauseyyF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_stop",
-        "printedName": "SL_stop()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_stop",
-        "mangledName": "$s25UnitySingleURLVideoPlayer7SL_stopyyF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_seekForward",
-        "printedName": "SL_seekForward(seconds:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Double",
-            "printedName": "Swift.Double",
-            "usr": "s:Sd"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_seekForwardWithSeconds:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer14SL_seekForward7secondsySd_tF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_seekBackward",
-        "printedName": "SL_seekBackward(seconds:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Double",
-            "printedName": "Swift.Double",
-            "usr": "s:Sd"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_seekBackwardWithSeconds:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer15SL_seekBackward7secondsySd_tF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_seekTo",
-        "printedName": "SL_seekTo(value:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Double",
-            "printedName": "Swift.Double",
-            "usr": "s:Sd"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_seekToValue:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer9SL_seekTo5valueySd_tF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_cleanup",
-        "printedName": "SL_cleanup()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_cleanup",
-        "mangledName": "$s25UnitySingleURLVideoPlayer10SL_cleanupyyF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_setURLS",
-        "printedName": "SL_setURLS(_:_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "UnsafePointer",
-            "printedName": "Swift.UnsafePointer<Swift.UnsafePointer<Swift.Int8>?>",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.UnsafePointer<Swift.Int8>?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UnsafePointer",
-                    "printedName": "Swift.UnsafePointer<Swift.Int8>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int8",
-                        "printedName": "Swift.Int8",
-                        "usr": "s:s4Int8V"
-                      }
-                    ],
-                    "usr": "s:SP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "usr": "s:SP"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Int32",
-            "printedName": "Swift.Int32",
-            "usr": "s:s5Int32V"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_setURLS::",
-        "mangledName": "$s25UnitySingleURLVideoPlayer10SL_setURLSyySPySPys4Int8VGSgG_s5Int32VtF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_setShowForwardButton",
-        "printedName": "SL_setShowForwardButton(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_setShowForwardButton:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer23SL_setShowForwardButtonyySbF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_setShowBackwordButton",
-        "printedName": "SL_setShowBackwordButton(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_setShowBackwordButton:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer24SL_setShowBackwordButtonyySbF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_setShowBack10Button",
-        "printedName": "SL_setShowBack10Button(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_setShowBack10Button:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer22SL_setShowBack10ButtonyySbF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_setShowFor10Button",
-        "printedName": "SL_setShowFor10Button(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_setShowFor10Button:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer21SL_setShowFor10ButtonyySbF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_setShowPlayPauseButton",
-        "printedName": "SL_setShowPlayPauseButton(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_setShowPlayPauseButton:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer25SL_setShowPlayPauseButtonyySbF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_setShowBackButton",
-        "printedName": "SL_setShowBackButton(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_setShowBackButton:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer20SL_setShowBackButtonyySbF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_setShowLogo",
-        "printedName": "SL_setShowLogo(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_setShowLogo:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer14SL_setShowLogoyySbF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_setShowSeekbar",
-        "printedName": "SL_setShowSeekbar(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_setShowSeekbar:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer17SL_setShowSeekbaryySbF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_setShowTimeDuration",
-        "printedName": "SL_setShowTimeDuration(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_setShowTimeDuration:",
-        "mangledName": "$s25UnitySingleURLVideoPlayer22SL_setShowTimeDurationyySbF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "UnitySendMessage",
-        "printedName": "UnitySendMessage(_:_:_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "UnsafePointer",
-            "printedName": "Swift.UnsafePointer<Swift.Int8>",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int8",
-                "printedName": "Swift.Int8",
-                "usr": "s:s4Int8V"
-              }
-            ],
-            "usr": "s:SP"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "UnsafePointer",
-            "printedName": "Swift.UnsafePointer<Swift.Int8>",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int8",
-                "printedName": "Swift.Int8",
-                "usr": "s:s4Int8V"
-              }
-            ],
-            "usr": "s:SP"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "UnsafePointer",
-            "printedName": "Swift.UnsafePointer<Swift.Int8>",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int8",
-                "printedName": "Swift.Int8",
-                "usr": "s:s4Int8V"
-              }
-            ],
-            "usr": "s:SP"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:25UnitySingleURLVideoPlayer0A11SendMessageyySPys4Int8VG_A2EtF",
-        "mangledName": "$s25UnitySingleURLVideoPlayer0A11SendMessageyySPys4Int8VG_A2EtF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "SL_registerUnityCallback",
-        "printedName": "SL_registerUnityCallback()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)SL_registerUnityCallback",
-        "mangledName": "$s25UnitySingleURLVideoPlayer011SL_registerA8CallbackyyF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "sendUnityMessage",
-        "printedName": "sendUnityMessage(methodName:message:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "String",
-            "printedName": "Swift.String",
-            "usr": "s:SS"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "String",
-            "printedName": "Swift.String",
-            "usr": "s:SS"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:25UnitySingleURLVideoPlayer04sendA7Message10methodName7messageySS_SStF",
-        "mangledName": "$s25UnitySingleURLVideoPlayer04sendA7Message10methodName7messageySS_SStF",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "UnitySingleURLVideoPlayer"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "OrientationObserver",
-        "printedName": "OrientationObserver",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "orientation",
-            "printedName": "orientation",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIInterfaceOrientation",
-                "printedName": "UIKit.UIInterfaceOrientation",
-                "usr": "c:@E@UIInterfaceOrientation"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC11orientationSo011UIInterfaceE0Vvp",
-            "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC11orientationSo011UIInterfaceE0Vvp",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "ProjectedValueProperty",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIInterfaceOrientation",
-                    "printedName": "UIKit.UIInterfaceOrientation",
-                    "usr": "c:@E@UIInterfaceOrientation"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC11orientationSo011UIInterfaceE0Vvg",
-                "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC11orientationSo011UIInterfaceE0Vvg",
-                "moduleName": "UnitySingleURLVideoPlayer",
-                "implicit": true,
-                "isOpen": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIInterfaceOrientation",
-                    "printedName": "UIKit.UIInterfaceOrientation",
-                    "usr": "c:@E@UIInterfaceOrientation"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC11orientationSo011UIInterfaceE0Vvs",
-                "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC11orientationSo011UIInterfaceE0Vvs",
-                "moduleName": "UnitySingleURLVideoPlayer",
-                "implicit": true,
-                "isOpen": true,
-                "intro_Macosx": "10.15",
-                "intro_iOS": "13.0",
-                "intro_tvOS": "13.0",
-                "intro_watchOS": "6.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC11orientationSo011UIInterfaceE0VvM",
-                "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC11orientationSo011UIInterfaceE0VvM",
-                "moduleName": "UnitySingleURLVideoPlayer",
-                "implicit": true,
-                "isOpen": true,
-                "intro_Macosx": "10.15",
-                "intro_iOS": "13.0",
-                "intro_tvOS": "13.0",
-                "intro_watchOS": "6.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "$orientation",
-            "printedName": "$orientation",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Publisher",
-                "printedName": "Combine.Published<UIKit.UIInterfaceOrientation>.Publisher",
-                "usr": "s:7Combine9PublishedV9PublisherV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC12$orientation7Combine9PublishedV9PublisherVySo011UIInterfaceE0V_Gvp",
-            "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC12$orientation7Combine9PublishedV9PublisherVySo011UIInterfaceE0V_Gvp",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "implicit": true,
-            "isOpen": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Publisher",
-                    "printedName": "Combine.Published<UIKit.UIInterfaceOrientation>.Publisher",
-                    "usr": "s:7Combine9PublishedV9PublisherV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC12$orientation7Combine9PublishedV9PublisherVySo011UIInterfaceE0V_Gvg",
-                "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC12$orientation7Combine9PublishedV9PublisherVySo011UIInterfaceE0V_Gvg",
-                "moduleName": "UnitySingleURLVideoPlayer",
-                "implicit": true,
-                "isOpen": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Publisher",
-                    "printedName": "Combine.Published<UIKit.UIInterfaceOrientation>.Publisher",
-                    "usr": "s:7Combine9PublishedV9PublisherV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC12$orientation7Combine9PublishedV9PublisherVySo011UIInterfaceE0V_Gvs",
-                "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC12$orientation7Combine9PublishedV9PublisherVySo011UIInterfaceE0V_Gvs",
-                "moduleName": "UnitySingleURLVideoPlayer",
-                "implicit": true,
-                "isOpen": true,
-                "intro_Macosx": "11.0",
-                "intro_iOS": "14.0",
-                "intro_tvOS": "14.0",
-                "intro_watchOS": "7.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC12$orientation7Combine9PublishedV9PublisherVySo011UIInterfaceE0V_GvM",
-                "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC12$orientation7Combine9PublishedV9PublisherVySo011UIInterfaceE0V_GvM",
-                "moduleName": "UnitySingleURLVideoPlayer",
-                "implicit": true,
-                "isOpen": true,
-                "intro_Macosx": "11.0",
-                "intro_iOS": "14.0",
-                "intro_tvOS": "14.0",
-                "intro_watchOS": "7.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "_orientation",
-            "printedName": "_orientation",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Published",
-                "printedName": "Combine.Published<UIKit.UIInterfaceOrientation>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIInterfaceOrientation",
-                    "printedName": "UIKit.UIInterfaceOrientation",
-                    "usr": "c:@E@UIInterfaceOrientation"
-                  }
-                ],
-                "usr": "s:7Combine9PublishedV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC12_orientation33_CE9D4CD5A3BB8256B89C661687307AE2LL7Combine9PublishedVySo011UIInterfaceE0VGvp",
-            "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC12_orientation33_CE9D4CD5A3BB8256B89C661687307AE2LL7Combine9PublishedVySo011UIInterfaceE0VGvp",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "implicit": true,
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 0,
-            "hasStorage": true
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OrientationObserver",
-                "printedName": "UnitySingleURLVideoPlayer.OrientationObserver",
-                "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverCACycfc",
-            "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverCACycfc",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC",
-        "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "isOpen": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ObservableObject",
-            "printedName": "ObservableObject",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ObjectWillChangePublisher",
-                "printedName": "ObjectWillChangePublisher",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObservableObjectPublisher",
-                    "printedName": "Combine.ObservableObjectPublisher",
-                    "usr": "s:7Combine25ObservableObjectPublisherC"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7Combine16ObservableObjectP",
-            "mangledName": "$s7Combine16ObservableObjectP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "UnitySingleURLVideoPlayer"
-      },
-      {
-        "kind": "Import",
-        "name": "AVKit",
-        "printedName": "AVKit",
-        "declKind": "Import",
-        "moduleName": "UnitySingleURLVideoPlayer"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "UnitySingleURLVideoPlayer"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "FullScreenVideoPlayer",
-        "printedName": "FullScreenVideoPlayer",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "player",
-            "printedName": "player",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AVFoundation.AVPlayer?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AVPlayer",
-                    "printedName": "AVFoundation.AVPlayer",
-                    "usr": "c:objc(cs)AVPlayer"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V6playerSo8AVPlayerCSgvp",
-            "mangledName": "$s25UnitySingleURLVideoPlayer015FullScreenVideoD0V6playerSo8AVPlayerCSgvp",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 0,
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "AVFoundation.AVPlayer?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AVPlayer",
-                        "printedName": "AVFoundation.AVPlayer",
-                        "usr": "c:objc(cs)AVPlayer"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V6playerSo8AVPlayerCSgvg",
-                "mangledName": "$s25UnitySingleURLVideoPlayer015FullScreenVideoD0V6playerSo8AVPlayerCSgvg",
-                "moduleName": "UnitySingleURLVideoPlayer",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "makeUIViewController",
-            "printedName": "makeUIViewController(context:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AVPlayerViewController",
-                "printedName": "AVKit.AVPlayerViewController",
-                "usr": "c:objc(cs)AVPlayerViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewControllerRepresentableContext",
-                "printedName": "SwiftUI.UIViewControllerRepresentableContext<UnitySingleURLVideoPlayer.FullScreenVideoPlayer>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FullScreenVideoPlayer",
-                    "printedName": "UnitySingleURLVideoPlayer.FullScreenVideoPlayer",
-                    "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V"
-                  }
-                ],
-                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V20makeUIViewController7contextSo012AVPlayerViewJ0C7SwiftUI0iJ20RepresentableContextVyACG_tF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer015FullScreenVideoD0V20makeUIViewController7contextSo012AVPlayerViewJ0C7SwiftUI0iJ20RepresentableContextVyACG_tF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "updateUIViewController",
-            "printedName": "updateUIViewController(_:context:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AVPlayerViewController",
-                "printedName": "AVKit.AVPlayerViewController",
-                "usr": "c:objc(cs)AVPlayerViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewControllerRepresentableContext",
-                "printedName": "SwiftUI.UIViewControllerRepresentableContext<UnitySingleURLVideoPlayer.FullScreenVideoPlayer>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FullScreenVideoPlayer",
-                    "printedName": "UnitySingleURLVideoPlayer.FullScreenVideoPlayer",
-                    "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V"
-                  }
-                ],
-                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V22updateUIViewController_7contextySo012AVPlayerViewJ0C_7SwiftUI0iJ20RepresentableContextVyACGtF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer015FullScreenVideoD0V22updateUIViewController_7contextySo012AVPlayerViewJ0C_7SwiftUI0iJ20RepresentableContextVyACGtF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(player:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FullScreenVideoPlayer",
-                "printedName": "UnitySingleURLVideoPlayer.FullScreenVideoPlayer",
-                "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AVFoundation.AVPlayer?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AVPlayer",
-                    "printedName": "AVFoundation.AVPlayer",
-                    "usr": "c:objc(cs)AVPlayer"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V6playerACSo8AVPlayerCSg_tcfc",
-            "mangledName": "$s25UnitySingleURLVideoPlayer015FullScreenVideoD0V6playerACSo8AVPlayerCSg_tcfc",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "implicit": true,
-            "declAttributes": [
-              "Nonisolated"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V",
-        "mangledName": "$s25UnitySingleURLVideoPlayer015FullScreenVideoD0V",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UIViewControllerRepresentable",
-            "printedName": "UIViewControllerRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "UIViewControllerType",
-                "printedName": "UIViewControllerType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AVPlayerViewController",
-                    "printedName": "AVKit.AVPlayerViewController",
-                    "usr": "c:objc(cs)AVPlayerViewController"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Coordinator",
-                "printedName": "Coordinator",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI29UIViewControllerRepresentableP",
-            "mangledName": "$s7SwiftUI29UIViewControllerRepresentableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "VideoPlayerService",
-        "printedName": "VideoPlayerService",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "VideoPlayerService",
-                "printedName": "UnitySingleURLVideoPlayer.VideoPlayerService",
-                "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceCACycfc",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceCACycfc",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "loadVideo",
-            "printedName": "loadVideo(urlString:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC04loadE09urlStringySS_tF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC04loadE09urlStringySS_tF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "play",
-            "printedName": "play()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC4playyyF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC4playyyF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "pause",
-            "printedName": "pause()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC5pauseyyF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC5pauseyyF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "stop",
-            "printedName": "stop()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC4stopyyF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC4stopyyF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "seekForward",
-            "printedName": "seekForward(seconds:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC11seekForward7secondsySd_tF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC11seekForward7secondsySd_tF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "seekBackward",
-            "printedName": "seekBackward(seconds:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC12seekBackward7secondsySd_tF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC12seekBackward7secondsySd_tF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "cleanup",
-            "printedName": "cleanup()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC7cleanupyyF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC7cleanupyyF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "seekTo",
-            "printedName": "seekTo(value:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC6seekTo5valueySd_tF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC6seekTo5valueySd_tF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setURLS",
-            "printedName": "setURLS(urls:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC7setURLS4urlsySaySSG_tF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC7setURLS4urlsySaySSG_tF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setShowForwardButton",
-            "printedName": "setShowForwardButton(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC20setShowForwardButtonyySbF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC20setShowForwardButtonyySbF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setShowBackwordButton",
-            "printedName": "setShowBackwordButton(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC21setShowBackwordButtonyySbF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC21setShowBackwordButtonyySbF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setShowBack10Button",
-            "printedName": "setShowBack10Button(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC19setShowBack10ButtonyySbF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC19setShowBack10ButtonyySbF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setShowFor10Button",
-            "printedName": "setShowFor10Button(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC18setShowFor10ButtonyySbF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC18setShowFor10ButtonyySbF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setShowPlayPauseButton",
-            "printedName": "setShowPlayPauseButton(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC22setShowPlayPauseButtonyySbF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC22setShowPlayPauseButtonyySbF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setShowBackButton",
-            "printedName": "setShowBackButton(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC17setShowBackButtonyySbF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC17setShowBackButtonyySbF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setShowLogo",
-            "printedName": "setShowLogo(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC11setShowLogoyySbF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC11setShowLogoyySbF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setShowSeekbar",
-            "printedName": "setShowSeekbar(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC14setShowSeekbaryySbF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC14setShowSeekbaryySbF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setShowTimeDuration",
-            "printedName": "setShowTimeDuration(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC19setShowTimeDurationyySbF",
-            "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC19setShowTimeDurationyySbF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:25UnitySingleURLVideoPlayer05VideoD7ServiceC",
-        "mangledName": "$s25UnitySingleURLVideoPlayer05VideoD7ServiceC",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "isOpen": true,
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "UnitySingleURLVideoPlayer",
-        "declAttributes": [
-          "RawDocComment"
         ]
       },
       {
@@ -9824,6 +9159,671 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "UnitySingleURLVideoPlayer"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OrientationObserver",
+        "printedName": "OrientationObserver",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "orientation",
+            "printedName": "orientation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIInterfaceOrientation",
+                "printedName": "UIKit.UIInterfaceOrientation",
+                "usr": "c:@E@UIInterfaceOrientation"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC11orientationSo011UIInterfaceE0Vvp",
+            "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC11orientationSo011UIInterfaceE0Vvp",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "ProjectedValueProperty",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIInterfaceOrientation",
+                    "printedName": "UIKit.UIInterfaceOrientation",
+                    "usr": "c:@E@UIInterfaceOrientation"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC11orientationSo011UIInterfaceE0Vvg",
+                "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC11orientationSo011UIInterfaceE0Vvg",
+                "moduleName": "UnitySingleURLVideoPlayer",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIInterfaceOrientation",
+                    "printedName": "UIKit.UIInterfaceOrientation",
+                    "usr": "c:@E@UIInterfaceOrientation"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC11orientationSo011UIInterfaceE0Vvs",
+                "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC11orientationSo011UIInterfaceE0Vvs",
+                "moduleName": "UnitySingleURLVideoPlayer",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC11orientationSo011UIInterfaceE0VvM",
+                "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC11orientationSo011UIInterfaceE0VvM",
+                "moduleName": "UnitySingleURLVideoPlayer",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$orientation",
+            "printedName": "$orientation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<UIKit.UIInterfaceOrientation>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC12$orientation7Combine9PublishedV9PublisherVySo011UIInterfaceE0V_Gvp",
+            "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC12$orientation7Combine9PublishedV9PublisherVySo011UIInterfaceE0V_Gvp",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "implicit": true,
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<UIKit.UIInterfaceOrientation>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC12$orientation7Combine9PublishedV9PublisherVySo011UIInterfaceE0V_Gvg",
+                "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC12$orientation7Combine9PublishedV9PublisherVySo011UIInterfaceE0V_Gvg",
+                "moduleName": "UnitySingleURLVideoPlayer",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<UIKit.UIInterfaceOrientation>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC12$orientation7Combine9PublishedV9PublisherVySo011UIInterfaceE0V_Gvs",
+                "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC12$orientation7Combine9PublishedV9PublisherVySo011UIInterfaceE0V_Gvs",
+                "moduleName": "UnitySingleURLVideoPlayer",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC12$orientation7Combine9PublishedV9PublisherVySo011UIInterfaceE0V_GvM",
+                "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC12$orientation7Combine9PublishedV9PublisherVySo011UIInterfaceE0V_GvM",
+                "moduleName": "UnitySingleURLVideoPlayer",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_orientation",
+            "printedName": "_orientation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Published",
+                "printedName": "Combine.Published<UIKit.UIInterfaceOrientation>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIInterfaceOrientation",
+                    "printedName": "UIKit.UIInterfaceOrientation",
+                    "usr": "c:@E@UIInterfaceOrientation"
+                  }
+                ],
+                "usr": "s:7Combine9PublishedV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC12_orientation33_CE9D4CD5A3BB8256B89C661687307AE2LL7Combine9PublishedVySo011UIInterfaceE0VGvp",
+            "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC12_orientation33_CE9D4CD5A3BB8256B89C661687307AE2LL7Combine9PublishedVySo011UIInterfaceE0VGvp",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OrientationObserver",
+                "printedName": "UnitySingleURLVideoPlayer.OrientationObserver",
+                "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverCACycfc",
+            "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverCACycfc",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:25UnitySingleURLVideoPlayer19OrientationObserverC",
+        "mangledName": "$s25UnitySingleURLVideoPlayer19OrientationObserverC",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "UnitySingleURLVideoPlayer"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "UnitySingleURLVideoPlayer"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnitySingleURLVideoPlayer"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FullScreenVideoPlayer",
+        "printedName": "FullScreenVideoPlayer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "player",
+            "printedName": "player",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFoundation.AVPlayer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPlayer",
+                    "printedName": "AVFoundation.AVPlayer",
+                    "usr": "c:objc(cs)AVPlayer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V6playerSo8AVPlayerCSgvp",
+            "mangledName": "$s25UnitySingleURLVideoPlayer015FullScreenVideoD0V6playerSo8AVPlayerCSgvp",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVFoundation.AVPlayer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayer",
+                        "printedName": "AVFoundation.AVPlayer",
+                        "usr": "c:objc(cs)AVPlayer"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V6playerSo8AVPlayerCSgvg",
+                "mangledName": "$s25UnitySingleURLVideoPlayer015FullScreenVideoD0V6playerSo8AVPlayerCSgvg",
+                "moduleName": "UnitySingleURLVideoPlayer",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "makeUIViewController",
+            "printedName": "makeUIViewController(context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AVPlayerViewController",
+                "printedName": "AVKit.AVPlayerViewController",
+                "usr": "c:objc(cs)AVPlayerViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewControllerRepresentableContext",
+                "printedName": "SwiftUI.UIViewControllerRepresentableContext<UnitySingleURLVideoPlayer.FullScreenVideoPlayer>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FullScreenVideoPlayer",
+                    "printedName": "UnitySingleURLVideoPlayer.FullScreenVideoPlayer",
+                    "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V"
+                  }
+                ],
+                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V20makeUIViewController7contextSo012AVPlayerViewJ0C7SwiftUI0iJ20RepresentableContextVyACG_tF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer015FullScreenVideoD0V20makeUIViewController7contextSo012AVPlayerViewJ0C7SwiftUI0iJ20RepresentableContextVyACG_tF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateUIViewController",
+            "printedName": "updateUIViewController(_:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVPlayerViewController",
+                "printedName": "AVKit.AVPlayerViewController",
+                "usr": "c:objc(cs)AVPlayerViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewControllerRepresentableContext",
+                "printedName": "SwiftUI.UIViewControllerRepresentableContext<UnitySingleURLVideoPlayer.FullScreenVideoPlayer>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FullScreenVideoPlayer",
+                    "printedName": "UnitySingleURLVideoPlayer.FullScreenVideoPlayer",
+                    "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V"
+                  }
+                ],
+                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V22updateUIViewController_7contextySo012AVPlayerViewJ0C_7SwiftUI0iJ20RepresentableContextVyACGtF",
+            "mangledName": "$s25UnitySingleURLVideoPlayer015FullScreenVideoD0V22updateUIViewController_7contextySo012AVPlayerViewJ0C_7SwiftUI0iJ20RepresentableContextVyACGtF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(player:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenVideoPlayer",
+                "printedName": "UnitySingleURLVideoPlayer.FullScreenVideoPlayer",
+                "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFoundation.AVPlayer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPlayer",
+                    "printedName": "AVFoundation.AVPlayer",
+                    "usr": "c:objc(cs)AVPlayer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V6playerACSo8AVPlayerCSg_tcfc",
+            "mangledName": "$s25UnitySingleURLVideoPlayer015FullScreenVideoD0V6playerACSo8AVPlayerCSg_tcfc",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:25UnitySingleURLVideoPlayer015FullScreenVideoD0V",
+        "mangledName": "$s25UnitySingleURLVideoPlayer015FullScreenVideoD0V",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UIViewControllerRepresentable",
+            "printedName": "UIViewControllerRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UIViewControllerType",
+                "printedName": "UIViewControllerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPlayerViewController",
+                    "printedName": "AVKit.AVPlayerViewController",
+                    "usr": "c:objc(cs)AVPlayerViewController"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Coordinator",
+                "printedName": "Coordinator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI29UIViewControllerRepresentableP",
+            "mangledName": "$s7SwiftUI29UIViewControllerRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnitySingleURLVideoPlayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -10888,6 +10888,132 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "UIApplication",
+        "printedName": "UIApplication",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "topMostViewController",
+            "printedName": "topMostViewController()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So13UIApplicationC25UnitySingleURLVideoPlayerE21topMostViewControllerSo06UIViewI0CSgyF",
+            "mangledName": "$sSo13UIApplicationC25UnitySingleURLVideoPlayerE21topMostViewControllerSo06UIViewI0CSgyF",
+            "moduleName": "UnitySingleURLVideoPlayer",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIApplication",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIApplication",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIResponder",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "UIImage",
         "printedName": "UIImage",
         "children": [
@@ -11575,132 +11701,6 @@
             "printedName": "_ExpressibleByImageLiteral",
             "usr": "s:s26_ExpressibleByImageLiteralP",
             "mangledName": "$ss26_ExpressibleByImageLiteralP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "UIApplication",
-        "printedName": "UIApplication",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "topMostViewController",
-            "printedName": "topMostViewController()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIViewController?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIViewController",
-                    "printedName": "UIKit.UIViewController",
-                    "usr": "c:objc(cs)UIViewController"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So13UIApplicationC25UnitySingleURLVideoPlayerE21topMostViewControllerSo06UIViewI0CSgyF",
-            "mangledName": "$sSo13UIApplicationC25UnitySingleURLVideoPlayerE21topMostViewControllerSo06UIViewI0CSgyF",
-            "moduleName": "UnitySingleURLVideoPlayer",
-            "isOpen": true,
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)UIApplication",
-        "moduleName": "UIKit",
-        "isOpen": true,
-        "intro_iOS": "2.0",
-        "objc_name": "UIApplication",
-        "declAttributes": [
-          "Preconcurrency",
-          "Available",
-          "ObjC",
-          "NonSendable",
-          "Custom",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)UIResponder",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },

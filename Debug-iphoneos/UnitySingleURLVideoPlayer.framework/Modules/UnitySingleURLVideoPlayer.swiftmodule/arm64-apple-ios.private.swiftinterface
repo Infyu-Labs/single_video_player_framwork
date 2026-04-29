@@ -13,82 +13,19 @@ import _AVKit_SwiftUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_Concurrency.MainActor @preconcurrency public struct SwiftUISlider : SwiftUI.UIViewRepresentable {
-  @objc final public class Coordinator : ObjectiveC.NSObject {
-    public init(value: SwiftUICore.Binding<Swift.Double>, maxValue: Swift.Double, parent: UnitySingleURLVideoPlayer.SwiftUISlider? = nil)
-    @objc deinit
-  }
-  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: UnitySingleURLVideoPlayer.SwiftUISlider.Context) -> UIKit.UISlider
-  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: UIKit.UISlider, context: UnitySingleURLVideoPlayer.SwiftUISlider.Context)
-  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> UnitySingleURLVideoPlayer.SwiftUISlider.Coordinator
-  public typealias Body = Swift.Never
-  public typealias UIViewType = UIKit.UISlider
+extension UIKit.UIImage {
+  public func resized(to target: CoreFoundation.CGSize) -> UIKit.UIImage
+}
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func isHidden(_ bool: Swift.Bool) -> some SwiftUICore.View
+  
+  @_Concurrency.MainActor @preconcurrency public func isDisabled(_ bool: Swift.Bool) -> some SwiftUICore.View
+  
 }
 @_Concurrency.MainActor @preconcurrency public struct HiddenViewModifier : SwiftUICore.ViewModifier {
   @_Concurrency.MainActor @preconcurrency public func body(content: UnitySingleURLVideoPlayer.HiddenViewModifier.Content) -> some SwiftUICore.View
   
   public typealias Body = @_opaqueReturnTypeOf("$s25UnitySingleURLVideoPlayer18HiddenViewModifierV4body7contentQr7SwiftUI01_fG8_ContentVyACG_tF", 0) __
-}
-public var currentVideoPlayerService: UnitySingleURLVideoPlayer.VideoPlayerService?
-@_cdecl("SL_loadVideo")
-public func SL_loadVideo(urlString: Swift.UnsafePointer<Swift.CChar>)
-@_cdecl("SL_play")
-public func SL_play()
-@_cdecl("SL_pause")
-public func SL_pause()
-@_cdecl("SL_stop")
-public func SL_stop()
-@_cdecl("SL_seekForward")
-public func SL_seekForward(seconds: Swift.Double)
-@_cdecl("SL_seekBackward")
-public func SL_seekBackward(seconds: Swift.Double)
-@_cdecl("SL_seekTo")
-public func SL_seekTo(value: Swift.Double)
-@_cdecl("SL_cleanup")
-public func SL_cleanup()
-@_cdecl("SL_setURLS")
-public func SL_setURLS(_ cArray: Swift.UnsafePointer<Swift.UnsafePointer<Swift.CChar>?>, _ count: Swift.Int32)
-@_cdecl("SL_setShowForwardButton")
-public func SL_setShowForwardButton(_ visible: Swift.Bool)
-@_cdecl("SL_setShowBackwordButton")
-public func SL_setShowBackwordButton(_ visible: Swift.Bool)
-@_cdecl("SL_setShowBack10Button")
-public func SL_setShowBack10Button(_ visible: Swift.Bool)
-@_cdecl("SL_setShowFor10Button")
-public func SL_setShowFor10Button(_ visible: Swift.Bool)
-@_cdecl("SL_setShowPlayPauseButton")
-public func SL_setShowPlayPauseButton(_ visible: Swift.Bool)
-@_cdecl("SL_setShowBackButton")
-public func SL_setShowBackButton(_ visible: Swift.Bool)
-@_cdecl("SL_setShowLogo")
-public func SL_setShowLogo(_ visible: Swift.Bool)
-@_cdecl("SL_setShowSeekbar")
-public func SL_setShowSeekbar(_ visible: Swift.Bool)
-@_cdecl("SL_setShowTimeDuration")
-public func SL_setShowTimeDuration(_ visible: Swift.Bool)
-@_cdecl("SL_registerUnityCallback")
-public func SL_registerUnityCallback()
-public class VideoPlayerService {
-  public init()
-  public func loadVideo(urlString: Swift.String)
-  public func play()
-  public func pause()
-  public func stop()
-  public func seekForward(seconds: Swift.Double)
-  public func seekBackward(seconds: Swift.Double)
-  public func cleanup()
-  public func seekTo(value: Swift.Double)
-  public func setURLS(urls: [Swift.String])
-  public func setShowForwardButton(_ visible: Swift.Bool)
-  public func setShowBackwordButton(_ visible: Swift.Bool)
-  public func setShowBack10Button(_ visible: Swift.Bool)
-  public func setShowFor10Button(_ visible: Swift.Bool)
-  public func setShowPlayPauseButton(_ visible: Swift.Bool)
-  public func setShowBackButton(_ visible: Swift.Bool)
-  public func setShowLogo(_ visible: Swift.Bool)
-  public func setShowSeekbar(_ visible: Swift.Bool)
-  public func setShowTimeDuration(_ visible: Swift.Bool)
-  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class PlayerController : ObjectiveC.NSObject, Foundation.ObservableObject {
   @Combine.Published @_projectedValueProperty($player) public var player: AVFoundation.AVPlayer? {
@@ -327,6 +264,64 @@ public class VideoPlayerService {
   @objc deinit
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
 }
+public var currentVideoPlayerService: UnitySingleURLVideoPlayer.VideoPlayerService?
+@_cdecl("SL_loadVideo")
+public func SL_loadVideo(urlString: Swift.UnsafePointer<Swift.CChar>)
+@_cdecl("SL_play")
+public func SL_play()
+@_cdecl("SL_pause")
+public func SL_pause()
+@_cdecl("SL_stop")
+public func SL_stop()
+@_cdecl("SL_seekForward")
+public func SL_seekForward(seconds: Swift.Double)
+@_cdecl("SL_seekBackward")
+public func SL_seekBackward(seconds: Swift.Double)
+@_cdecl("SL_seekTo")
+public func SL_seekTo(value: Swift.Double)
+@_cdecl("SL_cleanup")
+public func SL_cleanup()
+@_cdecl("SL_setURLS")
+public func SL_setURLS(_ cArray: Swift.UnsafePointer<Swift.UnsafePointer<Swift.CChar>?>, _ count: Swift.Int32)
+@_cdecl("SL_setShowForwardButton")
+public func SL_setShowForwardButton(_ visible: Swift.Bool)
+@_cdecl("SL_setShowBackwordButton")
+public func SL_setShowBackwordButton(_ visible: Swift.Bool)
+@_cdecl("SL_setShowBack10Button")
+public func SL_setShowBack10Button(_ visible: Swift.Bool)
+@_cdecl("SL_setShowFor10Button")
+public func SL_setShowFor10Button(_ visible: Swift.Bool)
+@_cdecl("SL_setShowPlayPauseButton")
+public func SL_setShowPlayPauseButton(_ visible: Swift.Bool)
+@_cdecl("SL_setShowBackButton")
+public func SL_setShowBackButton(_ visible: Swift.Bool)
+@_cdecl("SL_setShowLogo")
+public func SL_setShowLogo(_ visible: Swift.Bool)
+@_cdecl("SL_setShowSeekbar")
+public func SL_setShowSeekbar(_ visible: Swift.Bool)
+@_cdecl("SL_setShowTimeDuration")
+public func SL_setShowTimeDuration(_ visible: Swift.Bool)
+@_cdecl("SL_registerUnityCallback")
+public func SL_registerUnityCallback()
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor @preconcurrency public func topMostViewController() -> UIKit.UIViewController?
+}
+@_Concurrency.MainActor @preconcurrency public struct DissabledViewModifier : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public func body(content: UnitySingleURLVideoPlayer.DissabledViewModifier.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s25UnitySingleURLVideoPlayer21DissabledViewModifierV4body7contentQr7SwiftUI01_fG8_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct SwiftUISlider : SwiftUI.UIViewRepresentable {
+  @objc final public class Coordinator : ObjectiveC.NSObject {
+    public init(value: SwiftUICore.Binding<Swift.Double>, maxValue: Swift.Double, parent: UnitySingleURLVideoPlayer.SwiftUISlider? = nil)
+    @objc deinit
+  }
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: UnitySingleURLVideoPlayer.SwiftUISlider.Context) -> UIKit.UISlider
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: UIKit.UISlider, context: UnitySingleURLVideoPlayer.SwiftUISlider.Context)
+  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> UnitySingleURLVideoPlayer.SwiftUISlider.Coordinator
+  public typealias Body = Swift.Never
+  public typealias UIViewType = UIKit.UISlider
+}
 @_Concurrency.MainActor @preconcurrency public struct VideoPlayerView : SwiftUICore.View {
   @SwiftUICore.ObservedObject @_projectedValueProperty($playerController) @_Concurrency.MainActor @preconcurrency public var playerController: UnitySingleURLVideoPlayer.PlayerController {
     get
@@ -345,24 +340,29 @@ public class VideoPlayerService {
   public typealias Body = @_opaqueReturnTypeOf("$s25UnitySingleURLVideoPlayer05VideoD4ViewV4bodyQrvp", 0) __
 }
 
-extension UIKit.UIApplication {
-  @_Concurrency.MainActor @preconcurrency public func topMostViewController() -> UIKit.UIViewController?
+public class VideoPlayerService {
+  public init()
+  public func loadVideo(urlString: Swift.String)
+  public func play()
+  public func pause()
+  public func stop()
+  public func seekForward(seconds: Swift.Double)
+  public func seekBackward(seconds: Swift.Double)
+  public func cleanup()
+  public func seekTo(value: Swift.Double)
+  public func setURLS(urls: [Swift.String])
+  public func setShowForwardButton(_ visible: Swift.Bool)
+  public func setShowBackwordButton(_ visible: Swift.Bool)
+  public func setShowBack10Button(_ visible: Swift.Bool)
+  public func setShowFor10Button(_ visible: Swift.Bool)
+  public func setShowPlayPauseButton(_ visible: Swift.Bool)
+  public func setShowBackButton(_ visible: Swift.Bool)
+  public func setShowLogo(_ visible: Swift.Bool)
+  public func setShowSeekbar(_ visible: Swift.Bool)
+  public func setShowTimeDuration(_ visible: Swift.Bool)
+  @objc deinit
 }
-extension UIKit.UIImage {
-  public func resized(to target: CoreFoundation.CGSize) -> UIKit.UIImage
-}
-@_Concurrency.MainActor @preconcurrency public struct DissabledViewModifier : SwiftUICore.ViewModifier {
-  @_Concurrency.MainActor @preconcurrency public func body(content: UnitySingleURLVideoPlayer.DissabledViewModifier.Content) -> some SwiftUICore.View
-  
-  public typealias Body = @_opaqueReturnTypeOf("$s25UnitySingleURLVideoPlayer21DissabledViewModifierV4body7contentQr7SwiftUI01_fG8_ContentVyACG_tF", 0) __
-}
-extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func isHidden(_ bool: Swift.Bool) -> some SwiftUICore.View
-  
-  @_Concurrency.MainActor @preconcurrency public func isDisabled(_ bool: Swift.Bool) -> some SwiftUICore.View
-  
-}
-extension UnitySingleURLVideoPlayer.SwiftUISlider : Swift.Sendable {}
 extension UnitySingleURLVideoPlayer.HiddenViewModifier : Swift.Sendable {}
-extension UnitySingleURLVideoPlayer.VideoPlayerView : Swift.Sendable {}
 extension UnitySingleURLVideoPlayer.DissabledViewModifier : Swift.Sendable {}
+extension UnitySingleURLVideoPlayer.SwiftUISlider : Swift.Sendable {}
+extension UnitySingleURLVideoPlayer.VideoPlayerView : Swift.Sendable {}
