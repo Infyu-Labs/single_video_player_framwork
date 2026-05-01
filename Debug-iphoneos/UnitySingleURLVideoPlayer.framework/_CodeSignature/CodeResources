@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		/IB0jeCG3wYlPxLw7pJiHuxqODU=
+		UgtS/FQ9mdG76IIR+8KRM2wPFuk=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Modules/UnitySingleURLVideoPlayer.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		lurue8cOeAcTkHL8juEY5IYmdd8=
+		7KCIwX3/HwMIZbmNOoa3CP8CwtA=
 		</data>
 		<key>Modules/UnitySingleURLVideoPlayer.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		aqCTRFWuktjcTHJ9G0VWwjd3aLE=
+		hBPI4UQzFdc8RGoFnrEVTvBQs2c=
 		</data>
 		<key>Modules/UnitySingleURLVideoPlayer.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		eTXP3HF80BqNkdarniQnoHgIey8=
+		ooq7OGVOiV0PM1bRFU56nmTmiNk=
 		</data>
 		<key>Modules/UnitySingleURLVideoPlayer.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/UnitySingleURLVideoPlayer.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		eTXP3HF80BqNkdarniQnoHgIey8=
+		ooq7OGVOiV0PM1bRFU56nmTmiNk=
 		</data>
 		<key>Modules/UnitySingleURLVideoPlayer.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		+Rgu2aJwoLI7NgLZwkdtdBPkYng=
+		k87XRB8nwBfPcpwfUY03wle3pEI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -43,28 +43,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			juUXxiHcIpoz9ObC8W+9h6lgDDFXwMSyFhasFcMbnLM=
+			wXJE+BkG5QFitJJHniBFhKj0n7/Pg0v+EcbZtsj59ZA=
 			</data>
 		</dict>
 		<key>Modules/UnitySingleURLVideoPlayer.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			obTEXd6LP9Y5gcoCNALUFwfQFnZIpqXAiPZ7XrZc2Sk=
+			hcb68nJNx1OrNiYOCI69a/Rd8frcq5Hg4jXp7yxRHaY=
 			</data>
 		</dict>
 		<key>Modules/UnitySingleURLVideoPlayer.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6TYdos5HkBi1OzS6RY3VaV55YqsjQSjoM36AtPVvpPs=
+			mjiGF5UKjOXSGvIfbrcKH7uFptbkNhxV0aOoUrbVVJU=
 			</data>
 		</dict>
 		<key>Modules/UnitySingleURLVideoPlayer.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pGVe6cGwQAon+P25wJZ36AqstUzNK2WXcmSw6HX0jnQ=
+			MoGZGEx9RRIJCHPg6hx7LbTDZxKtNsdGLwNuP2q6IWk=
 			</data>
 		</dict>
 		<key>Modules/UnitySingleURLVideoPlayer.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -78,14 +78,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pGVe6cGwQAon+P25wJZ36AqstUzNK2WXcmSw6HX0jnQ=
+			MoGZGEx9RRIJCHPg6hx7LbTDZxKtNsdGLwNuP2q6IWk=
 			</data>
 		</dict>
 		<key>Modules/UnitySingleURLVideoPlayer.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vFMBmUonrKfNGto59IHbE0gK3T0L8opUEPa/A31BE68=
+			IHH46UxIH8BFxEh+rWLg0lV1ZwrVi/SZDnfYlMk39Xc=
 			</data>
 		</dict>
 	</dict>
